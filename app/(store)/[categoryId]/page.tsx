@@ -18,7 +18,7 @@ export default async function StorePage({ params }: { params: Params }) {
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
       {category.products.map((product) => (
-        <ProductsCar key={product.id} />
+        <ProductsCar key={product.id} product={product} />
       ))}
     </div>
   )
