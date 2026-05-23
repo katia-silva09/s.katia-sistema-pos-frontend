@@ -1,8 +1,5 @@
-import { redirect } from 'next/navigation'
-import React from 'react'
+import { redirect } from "next/navigation"
 
 export default function StorePage() {
-  return (
-   redirect("/1")
-  )
+  return redirect("/1")
 }
